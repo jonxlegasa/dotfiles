@@ -1,0 +1,17 @@
+[user]
+	name = jonxlegasa
+	email = jon.legasa@gmail.com
+[init]
+	defaultBranch = main
+[safe]
+  directory = /mnt/c/Users/Jon Legasa/Documents/code/MerlinAI
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    cm = commit
+    lg = log --graph --oneline --decorate --all
+[pull]
+  rebase = true
+
+
