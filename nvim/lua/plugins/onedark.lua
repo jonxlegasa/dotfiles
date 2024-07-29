@@ -8,5 +8,4 @@ return {
       colorscheme = "onedark",
     },
   },
-
 }

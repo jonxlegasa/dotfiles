@@ -1,0 +1,14 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+
+.DS_Store
+tmux/plugins/
+raycast
+fzf
