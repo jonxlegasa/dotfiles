@@ -1,0 +1,2 @@
+
+brew leaves > leaves.txt
