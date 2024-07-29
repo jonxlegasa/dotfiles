@@ -1,4 +1,10 @@
-# 💤 LazyVim
+# jon's dotfiles
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+Simply clone the repo and run
+
+```bash
+bash setup.sh
+```
+
+
+
