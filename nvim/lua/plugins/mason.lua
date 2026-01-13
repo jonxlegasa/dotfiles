@@ -1,10 +1,10 @@
 return {
-  "williamboman/mason.nvim",
+  "mason-org/mason.nvim",
   cmd = "Mason",
   opts = {
     ensure_installed = {
-      "black",
       "pyright",
+      "julia-lsp"
     },
   },
 }

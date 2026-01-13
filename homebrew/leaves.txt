@@ -15,7 +15,6 @@ dog
 duf
 dust
 eksctl
-exa
 fd
 flyctl
 fzf

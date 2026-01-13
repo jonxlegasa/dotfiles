@@ -20,14 +20,13 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "~/Documents/SecondBrain/",
+        path = "/home/archimedes/Documents/archimedesvault"
       },
       {
         name = "work",
         path = "~/vaults/work",
       },
     },
-
     -- see below for full list of options 👇
   },
 }

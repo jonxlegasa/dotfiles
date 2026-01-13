@@ -1,9 +1,9 @@
 ansible
+atuin
 bat
 blackbox
 docker
 doctl
-exa
 fd
 fish
 fzf

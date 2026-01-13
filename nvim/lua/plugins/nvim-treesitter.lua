@@ -1,8 +1,9 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
+    build = ":TSUpdate",
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, {
         "astro",
         "cmake",
         "cpp",
@@ -10,6 +11,7 @@ return {
         "fish",
         "gitignore",
         "go",
+        "julia",
         "graphql",
         "http",
         "java",
@@ -18,18 +20,7 @@ return {
         "scss",
         "sql",
         "svelte",
-      },
-    },
-    config = function(_, opts)
-      require("nvim-treesitter.configs").setup(opts)
-
-      -- MDX
-      vim.filetype.add({
-        extension = {
-          mdx = "mdx",
-        },
       })
-      vim.treesitter.language.register("markdown", "mdx")
     end,
   },
 }
