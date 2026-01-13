@@ -3,6 +3,7 @@ automake
 atuin
 awscli
 bash
+gh
 bash-completion
 bat
 bpytop
