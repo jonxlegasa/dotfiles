@@ -3,6 +3,9 @@ echo "Stowing files now..."
 stow --adopt .
 
 echo "Downloading brew packages"
-xargs brew install < leaves.txt
+xargs brew install < ./homebrew/leaves.txt
+
+# Setup atuin
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 echo "Setup process finished"
