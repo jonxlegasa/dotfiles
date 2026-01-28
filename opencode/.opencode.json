@@ -2,19 +2,30 @@
   "data": {
     "directory": ".opencode"
   },
+  "mcpServers": {
+    "example": {
+      "command": "path/to/mcp-server",
+      "env": [],
+      "args": [],
+      "type": "stdio",
+      "url": "",
+      "headers": null
+    }
+  },
   "providers": {
-    "openai": {
-      "apiKey": "your-api-key",
-      "disabled": false
-    },
     "anthropic": {
       "apiKey": "your-api-key",
       "disabled": false
     },
     "copilot": {
+      "apiKey": "",
       "disabled": false
     },
     "groq": {
+      "apiKey": "your-api-key",
+      "disabled": false
+    },
+    "openai": {
       "apiKey": "your-api-key",
       "disabled": false
     },
@@ -23,39 +34,39 @@
       "disabled": false
     }
   },
+  "lsp": {
+    "go": {
+      "enabled": false,
+      "command": "gopls",
+      "args": null,
+      "options": null
+    }
+  },
   "agents": {
     "coder": {
       "model": "claude-3.7-sonnet",
-      "maxTokens": 5000
+      "maxTokens": 5000,
+      "reasoningEffort": ""
     },
     "task": {
       "model": "claude-3.7-sonnet",
-      "maxTokens": 5000
+      "maxTokens": 5000,
+      "reasoningEffort": ""
     },
     "title": {
       "model": "claude-3.7-sonnet",
-      "maxTokens": 80
+      "maxTokens": 80,
+      "reasoningEffort": ""
     }
+  },
+  "tui": {
+    "theme": "opencode"
   },
   "shell": {
     "path": "/bin/bash",
-    "args": ["-l"]
+    "args": [
+      "-l"
+    ]
   },
-  "mcpServers": {
-    "example": {
-      "type": "stdio",
-      "command": "path/to/mcp-server",
-      "env": [],
-      "args": []
-    }
-  },
-  "lsp": {
-    "go": {
-      "disabled": false,
-      "command": "gopls"
-    }
-  },
-  "debug": false,
-  "debugLSP": false,
   "autoCompact": true
 }
