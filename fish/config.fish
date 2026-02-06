@@ -17,3 +17,13 @@ set --export PATH $BUN_INSTALL/bin $PATH
 
 neofetch --source ~/.config/neofetch/archimedes.txt
 tmux -f ~/.config/tmux/tmux.conf
+set -gx PATH "$HOME/.local/bin" $PATH
+
+# Project configurations
+set -gx PROJECT_ONE_PATH "$HOME/code/demeter"
+set -gx PROJECT_ONE_CMD "echo 'Ready to work'"
+set -gx PROJECT_ONE_MSG "Demeter project loaded"
+
+set -gx PROJECT_TWO_PATH "$HOME/code/blaise"
+set -gx PROJECT_TWO_CMD "echo 'Ready to work'"
+set -gx PROJECT_TWO_MSG "Blaise project loaded"
