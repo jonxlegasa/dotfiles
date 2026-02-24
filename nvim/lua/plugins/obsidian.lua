@@ -27,6 +27,37 @@ return {
         path = "~/vaults/work",
       },
     },
-    -- see below for full list of options 👇
+
+    -- Use the title as-is for the filename.
+    ---@param title string|nil
+    ---@return string
+    note_id_func = function(title)
+      if title ~= nil then
+        return title
+      end
+      return tostring(os.time())
+    end,
+
+    -- Set aliases to the human-readable title and add a summary field.
+    ---@param note table an obsidian.Note object
+    ---@return table frontmatter
+    note_frontmatter_func = function(note)
+      local out = { id = note.id, aliases = {}, tags = note.tags or {}, summary = "" }
+      if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
+        for k, v in pairs(note.metadata) do
+          out[k] = v
+        end
+      end
+      -- Always include the note title as an alias so links display the name.
+      if note.aliases then
+        out.aliases = note.aliases
+      end
+      if note.title and note.title ~= "" then
+        if not vim.tbl_contains(out.aliases, note.title) then
+          table.insert(out.aliases, note.title)
+        end
+      end
+      return out
+    end,
   },
 }
