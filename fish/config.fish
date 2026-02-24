@@ -27,3 +27,5 @@ set -gx PROJECT_ONE_MSG "Demeter project loaded"
 set -gx PROJECT_TWO_PATH "$HOME/code/blaise"
 set -gx PROJECT_TWO_CMD "echo 'Ready to work'"
 set -gx PROJECT_TWO_MSG "Blaise project loaded"
+
+atuin init fish | source
