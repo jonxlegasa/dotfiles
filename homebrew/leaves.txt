@@ -15,6 +15,7 @@ go-md2man
 huggingface-cli
 julia
 juliaup
+lazydocker
 lazygit
 ncdu
 neofetch
@@ -22,5 +23,6 @@ neovim
 node
 ollama
 poetry
+supabase
 tmux
 uv
