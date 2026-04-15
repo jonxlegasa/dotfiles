@@ -7,4 +7,5 @@ bash setup.sh
 ```
 
 
-
+## Showing my roommate the power of git
+> hey!
